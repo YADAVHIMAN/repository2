@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>techbotindia</title>
+    <!--linking of css-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
+<body>
+  <nav><!--navigation bar-->
+    <ul class="main-menu">
+      <li><a href="front.html">Home</a></li>
+          <ul class="sub-menu">
+              <li><a href="#">PROFILE</a></li> 
+              <li><a href="#">MY_COURSES</a></li> 
+              <li><a href="#">settings</a></li> 
+          </ul>
+      </li>
+      <li>
+        <a href="#">courses</a>
+        <ul class="sub-menu">
+          <li><a href="CQUESTION.HTML">c</a></li>
+          <li><a href="C++INER.html">c++</a></li> 
+          <li><a href="pythonq.html">python</a></li>
+          <li><a href="javaq.html">JAVA</a></li>
+          <li><a href="htmlq.html">HTML</a></li>
+          <li><a href="cssq.html">CSS</a></li>
+          <li><a href="javascriptq.html">JAVASCRIPT</a></li>
+          <li><a href="phpq.html">PHP</a></li>
+
+
+        </ul>
+      </li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+     </ul>  
+    </nav>  
+    <!--website name/logo-->
+    <div id="logo"><h1>TECHBOTINDIA</h1></div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Enter your search term"><!--search box-->
+        <button class="search-button">Search</button><!--submit-->
+    </div>
+  
+  <div class="course-container">
+    <div class="course-card">
+        <img src="c.jpeg" alt="Course 1">
+        <h3><b>C </b></h3>
+        <p>INTERVIEW QUESTIONS WITH ANSWERS</p>
+        <a href="CQUESTION.HTML"><button class="button"  >GO</button></a>
+    </div>
+    <div class="course-card">
+        <img src="c++ programming .jpeg" alt="Course 2">
+        <h3>C++</h3>
+        <p>INTERVIEW QUESTION WITH ANSWERS</p>
+        <a href="c++question.html"><button class="button" >GO</button></a>
+    </div>
+    <!-- Add more course cards as needed -->
+    <div class="course-card">
+      <img src="python1.jpeg" alt="Course 3">
+      <h3>PYTHON</h3>
+      <p>INTERVIEW QUESTION WITH ANSWERS</p>
+      <a href="python.html"><button class="button" >GO</button></a>
+  </div>
+  <div class="course-card">
+    <img src="jav.jpeg" alt="Course 4">
+    <h3>JAVA</h3>
+    <p>INTERVIEW QUESTION WITH ANSWERS</p>
+    <a href="C++INER.HTML"><button class="button" >GO</button></a>
+</div>
+<div class="course-card">
+  <img src="HTML.JPEG" alt="Course 5">
+  <h3>HTML</h3>
+  <p>INTERVIEW QUESTION WITH ANSWERS</p>
+  <a href="C++INER.HTML"><button class="button" >GO</button></a>
+</div>
+<div class="course-card">
+  <img src="CSS.JPEG" alt="Course 6">
+  <h3>CSS</h3>
+  <p>INTERVIEW QUESTION WITH ANSWERS</p>
+  <a href="C++INER.HTML"><button class="button" >GO</button></a>
+</div>
+<div class="course-card">
+  <img src="JS.JPEG" alt="Course 4">
+  <h3>JAVASCRIPT</h3>
+  <p>INTERVIEW QUESTION WITH ANSWERS</p>
+  <a href="C++INER.HTML"><button class="button" >GO</button></a>
+</div>
+<div class="course-card">
+  <img src="PHP.JPEG" alt="Course 4">
+  <h3>PHP</h3>
+  <p>INTERVIEW QUESTION WITH ANSWERS</p>
+  <a href="C++INER.HTML"><button class="button" >GO</button></a>
+</div>
+  
+
+
+  
+</div>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCAN1tDKrj_T10hVtNgGGF3PUoh-DJa9mI",
+    authDomain: "techbotindia-78f8e.firebaseapp.com",
+    projectId: "techbotindia-78f8e",
+    storageBucket: "techbotindia-78f8e.appspot.com",
+    messagingSenderId: "923637849727",
+    appId: "1:923637849727:web:09a01bf125cb922d08694a",
+    measurementId: "G-FJ12RBVFGJ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script> 
+</body>
+</html>

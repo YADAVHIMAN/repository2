@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question and Answer Page</title>
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+ /* Replace with your image file path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+		.box {
+			border: 2px solid aqua;
+			box-shadow: 0px 4px 8px aqua;
+			padding: 10px;
+			margin: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+		}
+		.question {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.answer {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		nav {
+  background-color: black ;
+  width: 100%;
+  margin: auto;
+  padding:20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.main-menu li {
+  display: inline-block;
+  
+  
+}
+
+ul.main-menu li a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+ul.main-menu li a:hover {
+  background-color:black;
+ 
+}
+
+ul.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+
+  
+}
+
+ul.main-menu li:hover ul.sub-menu {
+  display:block;
+  
+}
+
+ul.sub-menu li {
+  display: block;
+  
+}
+
+ul.sub-menu li a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  
+  
+}
+
+ul.sub-menu li a:hover {
+  background-color: #666;
+  
+}
+  
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+#logo{/*logo adding in website*/
+  color:cyan;
+font-size: 20px;
+text-align: center;
+}
+
+/* Style for the search input */
+.search-input {
+  padding: 10px;
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 300px;
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 10px 20px;
+  border: none;border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+	<nav><!--navigation bar-->
+		<ul class="main-menu">
+		  <li><a href="front.html">Home</a></li>
+			  <ul class="sub-menu">
+				  <li><a href="#">PROFILE</a></li> 
+				  <li><a href="#">MY_COURSES</a></li> 
+				  <li><a href="#">settings</a></li> 
+			  </ul>
+		  </li>
+		  <li>
+			<a href="#">courses</a>
+			<ul class="sub-menu">
+			  <li><a href="CQUESTION.HTML">c</a></li>
+			  <li><a href="C++INER.html">c++</a></li> 
+			  <li><a href="pythonq.html">python</a></li>
+			  <li><a href="javaq.html">JAVA</a></li>
+			  <li><a href="htmlq.html">HTML</a></li>
+			  <li><a href="cssq.html">CSS</a></li>
+			  <li><a href="javascriptq.html">JAVASCRIPT</a></li>
+			  <li><a href="phpq.html">PHP</a></li>
+	
+	
+			</ul>
+		  </li>
+		  <li><a href="aboutus.html">About Us</a></li>
+		  <li><a href="contact.html">Contact Us</a></li>
+		 </ul>  
+		</nav>  
+	</ul>
+</li>
+</nav>  
+<!--website name/logo-->
+<div id="logo"><h1>TECHBOTINDIA</h1></div>
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Enter your search term"><!--search box-->
+  <button class="search-button">Search</button><!--submit-->
+</div>
+	<div class="box">
+		<div class="question">1.What are class and object in C++?</div>
+		<div class="answer"><p>A class is a user-defined data type that has data members and member functions. Data members are the data variables and member functions are the functions that are used to perform operations on these variables.
+
+			An object is an instance of a class. Since a class is a user-defined data type so an object can also be called a variable of that data type.
+			
+			A class is defined as-
+			<pre>
+				class A{
+				private:
+				 int data;
+				public:
+				 void fun(){
+				
+				 }
+				};
+			</pre>
+		</p></div>
+	</div>
+	<div class="box">
+		<div class="question">2.Explain constructor in C++?</div>
+		<div class="answer"><p>The constructor is a member function that is executed automatically whenever an object is created. Constructors have the same name as the class of which they are members so that compiler knows that the member function is a constructor. And no return type is used for constructors.
+
+			Example:
+			<pre>
+			class A{
+			 private:
+			  int val;
+			 public:
+			  A(int x){             //one argument constructor
+			   val=x;
+			  }
+			  A(){                    //zero argument constructor
+			  }
+			}
+			int main(){
+			 A a(3);     
+			
+			 return 0;
+			}
+		</pre>
+		</p></div>
+	</div>
+	<div class="box">
+		<div class="question">3.What is a reference in C++?</div>
+		<div class="answer"><p>A reference is like a pointer. It is another name of an already existing variable. Once a reference name is initialized with a variable, that variable can be accessed by the variable name or reference name both.
+
+			For example-
+			
+			<pre>
+				int x=10;
+			    int &ref=x;           //reference variable
+				</pre>
+			If we change the value of ref it will be reflected in x. Once a reference variable is initialized it cannot refer to any other variable. We can declare an array of pointers but an array of references is not possible.
+			
+			</p></div>
+	</div>
+	<script>
+		var boxes = document.getElementsByClassName("box");
+		for (var i = 0; i < boxes.length; i++) {
+			boxes[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+			});
+		}
+	</script>
+</body>
+</html>

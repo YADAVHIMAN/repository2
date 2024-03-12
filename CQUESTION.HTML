@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Question and Answer Page</title>
+	<style>
+		body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+ /* Replace with your image file path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+		.box {
+			border: 2px solid aqua;
+			box-shadow: 0px 4px 8px aqua;
+			padding: 10px;
+			margin: 10px;
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			
+		}
+		.question {
+			font-weight: bold;
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.answer {
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+		nav {
+  background-color: black ;
+  width: 100%;
+  margin: auto;
+  padding:20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.main-menu li {
+  display: inline-block;
+  
+  
+}
+
+ul.main-menu li a {
+  display: block;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+ul.main-menu li a:hover {
+  background-color:black;
+ 
+}
+
+ul.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+
+  
+}
+
+ul.main-menu li:hover ul.sub-menu {
+  display:block;
+  
+}
+
+ul.sub-menu li {
+  display: block;
+  
+}
+
+ul.sub-menu li a {
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  
+  
+}
+
+ul.sub-menu li a:hover {
+  background-color: #666;
+  
+}
+  
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+}
+#logo{/*logo adding in website*/
+  color:cyan;
+font-size: 20px;
+text-align: center;
+}
+
+/* Style for the search input */
+.search-input {
+  padding: 10px;
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 300px;
+}
+
+/* Style for the search button */
+.search-button {
+  padding: 10px 20px;
+  border: none;border-radius: 0 5px 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+	</style>
+</head>
+<body>
+	<nav><!--navigation bar-->
+		<ul class="main-menu">
+		  <li><a href="front.html">Home</a></li>
+			  <ul class="sub-menu">
+				  <li><a href="#">PROFILE</a></li> 
+				  <li><a href="#">MY_COURSES</a></li> 
+				  <li><a href="#">settings</a></li> 
+			  </ul>
+		  </li>
+		  <li>
+			<a href="#">courses</a>
+			<ul class="sub-menu">
+			  <li><a href="CQUESTION.HTML">c</a></li>
+			  <li><a href="C++INER.html">c++</a></li> 
+			  <li><a href="pythonq.html">python</a></li>
+			  <li><a href="javaq.html">JAVA</a></li>
+			  <li><a href="htmlq.html">HTML</a></li>
+			  <li><a href="cssq.html">CSS</a></li>
+			  <li><a href="javascriptq.html">JAVASCRIPT</a></li>
+			  <li><a href="phpq.html">PHP</a></li>
+	
+	
+			</ul>
+		  </li>
+		  <li><a href="aboutus.html">About Us</a></li>
+		  <li><a href="contact.html">Contact Us</a></li>
+		 </ul>  
+		</nav>  
+	</ul>
+</li>
+</nav>  
+<!--website name/logo-->
+<div id="logo"><h1>TECHBOTINDIA</h1></div>
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Enter your search term"><!--search box-->
+  <button class="search-button">Search</button><!--submit-->
+</div>
+	<div class="box">
+		<div class="question">1. In C, What is the #line used for?</div>
+		<div class="answer"><pre><p>In C, #line is used as a preprocessor to re-set the line number in the code, which takes a parameter as line number. Here is an example for the same.
+
+			#include <stdio.h>								/*line 1*/
+															/*line 2*/
+				int main(){									/*line 3*/
+															/*line 4*/
+				printf("Hello world\n");					/*line 5*/
+				//print current line						/*line 6*/
+				printf("Line: %d\n",__LINE__);				/*line 7*/
+				//reset the line number by 36				/*line 8*/
+				#line 36	/*reseting*/
+				//print current line						/*line 36*/
+				printf("Line: %d\n",__LINE__);				/*line 37*/
+				printf("Bye bye!!!\n");						/*line 39*/
+															/*line 40*/
+				return 0;									/*line 41*/
+			}												/*line 42*/
+			</p></pre></div>
+	</div>
+	<div class="box">
+		<div class="question">2.How can a string be converted to a number?</div>
+		<div class="answer"><pre><p>The function takes the string as an input 
+			that needs to be converted to an integer.
+
+			int atoi(const char *string)
+			Return Value:
+			
+			On successful conversion, it returns the desired integer value
+			If the string starts with alpha-numeric char or only contains alpha-num char, 0 is returned.
+			In case string starts with numeric character but is followed by alpha-num char,  
+			the string is converted to integer till the first occurrence of alphanumeric char.
+		</p></pre></div>
+	</div>
+	<div class="box">
+		<div class="question">3.How can a number be converted to a string?</div>
+		<div class="answer"><pre><p>The function takes a pointer to an array of char
+			                        elements that need to be converted, 
+			                        and a format string needs to be written in a buffer as a string
+
+			                     int sprintf(char *str, const char *format, ...)
+			                    #include<stdio.h>
+				                #include <math.h>
+				                int main()
+				                {
+				                char str[80];
+				                sprintf(str, "The value of PI = %f", M_PI);
+				                puts(str);
+				                return 0;
+				                }
+		</p></pre></div></div>
+		<div class="box">
+		<div class="question">4.What is an r-value and l-value?</div>
+		<div class="answer"><pre><p>The term "r-value" refers to a data value stored in memory at a given address. 
+			                       An r-value is an expression that cannot have a value assigned to it, hence 
+			                       it can only exist on the right side of an assignment operator(=).
+			                       The term "l-value" refers to a memory location that is used to identify an object. 
+			                       The l-value can be found on either the left or right side of an assignment operator(=). 
+			                       l-value is frequently used as an identifier.
+				
+		</p></pre></div></div>
+		<div class="box">
+		<div class="question">5.What is the difference between malloc() and calloc()?</div>
+		<div class="answer"><pre><p>calloc() and malloc() are memory dynamic memory allocating functions. 
+			                        The main difference is that malloc() only takes one argument, 
+			                        which is the number of bytes, but calloc() takes two arguments,
+			                      which are the number of blocks and the size of each block.
+		</p></pre></div></div>
+	
+	<script>
+		var boxes = document.getElementsByClassName("box");
+		for (var i = 0; i < boxes.length; i++) {
+			boxes[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+			});
+		}
+	</script>
+</body>
+</html>
